@@ -7,7 +7,7 @@ const About = () => {
   const {theme} = useTheme()
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <section className="body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
+    <section className="body-font overflow-hidden bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="p-5 mt-3 mx-auto md:mt-5 md:mx-10 lg:mx-16">
         <div id="about" className="flex flex-col text-center w-full mb-3">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2">
@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="mx-auto flex lg:flex-row flex-col items-center justify-center">
           <motion.div
-            initial={{opacity:0,x:-159}}
+            initial={{opacity:0,x:-59}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:2,stiffness:120}}
@@ -38,7 +38,7 @@ const About = () => {
           
           className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col items-center text-justify">
             <motion.p
-              initial={{opacity:0,x:359}}
+              initial={{opacity:0,x:59}}
               whileInView={{opacity:1,x:0}}
               viewport={{once:false, amount:'0.1'}}
               transition={{duration:1.5,stiffness:120}}

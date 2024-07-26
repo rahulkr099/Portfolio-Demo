@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <header className="body-font fixed inset-x-0 z-50 bg-gray-300 text-black dark:bg-neutral-900 dark:text-white">
+    <header className="body-font w-screen fixed inset-x-0 z-50 bg-gray-300 text-black dark:bg-neutral-900 dark:text-white">
     
       <div className="mx-auto py-2 px-5 flex flex-row justify-between items-center lg:py-4">
         <Link
@@ -86,6 +86,7 @@ const Navbar = () => {
                 className="mr-5 cursor-pointer hover:text-green-400 hover:animate-bounce md:mr-12"
               >
                 <motion.div
+                layout
                 whileHover={{scale:1.5,textShadow:"0px 0px 8px rgba(0,255,0,0.5)"}}
                 >{item.title}</motion.div>
               </Link>
@@ -119,15 +120,15 @@ const Navbar = () => {
         >
           <button onClick={toggleMenu} className="p-2 text-white">
             {isMenuOpen ? (
-              <MdClose className="h-6 w-6" />
+              <MdClose className="h-6 w-6 text-dark-orange" />
             ) : (
               <BiMenu className="h-6 w-6" />
             )}
           </button>
         </div>
         {isMenuOpen && (
-          <div className="min-h-[calc(100vh-4rem)] absolute inset-x-0 top-16 z-50 transition-all ease-in duration-1000 lg:hidden">
-            <div className="rounded-b-lg bg-gray-300 text-black dark:text-white dark:bg-gray-800 shadow-lg px-5 pb-4 ">
+          <div className="min-h-[calc(100vh-4rem)] absolute inset-x-0 top-16 z-50 transition-all ease-in duration-1000 lg:hidden overflow-visible">
+            <div className="rounded-b-lg  bg-gray-300 text-black dark:text-white dark:bg-gray-800 shadow-lg px-5 pb-4 ">
               <nav
                 
                 className="flex flex-col gap-y-7 text-xl"

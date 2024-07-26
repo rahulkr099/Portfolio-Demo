@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <section className=" body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
+    <section className=" body-font overflow-hidden bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="px-3 py-5 mx-auto text-center md:mt-7 sm:mx-7 md:mx-12 lg:mx-32 xl:mx-56">
         <div id="contact" className="flex flex-col text-center w-full mb-4">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 ">
@@ -60,6 +60,7 @@ const Contact = () => {
           <form  ref={formRef} onSubmit={handleSubmit} className="flex flex-col p-2 md:w-1/2 md:p-4 lg:px-5 lg:py-7 lg:m-4 lg:w-3/5">
             <div  className="p-2 w-full">
               <motion.input
+              layout
               initial={{opacity:0,y:59}}
                whileInView={{opacity:1,y:0}}
                viewport={{once:false, amount:'0.1'}}
@@ -68,6 +69,7 @@ const Contact = () => {
             </div>
             <div  className="p-2 w-full">
               <motion.input 
+              layout
               initial={{opacity:0,y:59}}
                whileInView={{opacity:1,y:0}}
                viewport={{once:false, amount:'0.1'}}
@@ -76,6 +78,7 @@ const Contact = () => {
             </div>
             <div className="p-2 w-full">
               <motion.textarea
+              layout
               initial={{opacity:0,y:59}}
                whileInView={{opacity:1,y:0}}
                viewport={{once:false, amount:'0.1'}}

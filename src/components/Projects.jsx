@@ -7,7 +7,7 @@ const Projects = () => {
   const {theme} = useTheme()
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <section className=" body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
+    <section className=" body-font overflow-hidden bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="px-3 py-5 mx-auto text-center sm:mx-6 md:mx-12 md:pt-5 md:mt-5 xl:mx-40">
         <div id="projects" className="flex flex-wrap w-full flex-col items-center text-center">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-3 ">
@@ -17,11 +17,11 @@ const Projects = () => {
             My Works
           </p>
         </div>
-        <div className="mx-auto grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-y-12 sm:gap-x-3 md:gap-x-5 lg:gap-x-2 lg:gap-y-5 xl:gap-y-10 xl:gap-x-5 mt-4 md:mt-8 ">
+        <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 sm:gap-x-3 md:gap-x-5 lg:gap-x-2 lg:gap-y-5 xl:gap-y-10 xl:gap-x-5 mt-4 md:mt-8 ">
           {ProjectsData.reverse().map((project) => (
             <div  key={project.id} className="group relative flex flex-col flex-wrap h-80 w-[95%] mx-auto shadow-xl rounded-xl ">
               <img src={project.image} alt={project.name} className="h-80 rounded-xl shadow-md shadow-blue-500"/>
-              <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-hidden group-hover:h-full transition-[height_0.5s] duration-500 bg-blue-400 rounded-xl">
+              <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-hidden group-hover:h-full transition-[height_0.5s] duration-500 bg-[rgba(99,99,99,0.5)] backdrop-blur-md rounded-xl">
                 <h3 className="text-2xl font-medium text-white my-2">{project.name}</h3>
                 <p className="px-2 text-lg text-white">{project.description}</p>
                 <div className="flex flex-wrap items-center gap-3 mt-3">

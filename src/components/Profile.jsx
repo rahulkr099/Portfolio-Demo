@@ -13,10 +13,11 @@ const Profile = () => {
   const { theme } = useTheme()
   return (
     <div className={`${theme === "Light" ? 'light' : 'dark'}`}>
-      <section className="body-font pt-16 lg:min-h-75vh  bg-gray-200 text-black dark:bg-black dark:text-white">
+      <section className="body-font overflow-hidden pt-16 lg:min-h-75vh  bg-gray-200 text-black dark:bg-black dark:text-white">
         <div className="p-5 mx-auto gap-2 flex flex-col md:pt-12 md:px-7 lg:py-20 lg:flex-row-reverse items-center min-h-fit">
           <motion.div
-            initial={{opacity:0,x:299}}
+          layout='position'
+            initial={{opacity:0,x:59}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:2,stiffness:120}}
@@ -50,7 +51,8 @@ const Profile = () => {
               />
             </div>
             <motion.p
-            initial={{opacity:0,x:-199}}
+            layout='position'
+            initial={{opacity:0,x:-99}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:3,stiffness:120}}
@@ -59,7 +61,8 @@ const Profile = () => {
               I’m proficient in developing web applications using the MERN stack.
             </motion.p>
             <motion.p
-             initial={{opacity:0,x:-199}}
+            layout='position'
+             initial={{opacity:0,x:-99}}
              whileInView={{opacity:1,x:0}}
              viewport={{once:false, amount:'0.1'}}
              transition={{duration:4,stiffness:120}}
@@ -73,6 +76,7 @@ const Profile = () => {
               className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between"
             >
               <motion.button 
+              layout='position'
              initial={{opacity:0,y:59}}
              whileInView={{opacity:1,y:0}}
              viewport={{once:false, amount:'0.1'}}
@@ -95,6 +99,7 @@ const Profile = () => {
                 rel="noreferrer"
               >
                 <motion.button 
+                layout='position'
                initial={{opacity:0,y:59}}
                whileInView={{opacity:1,y:0}}
                viewport={{once:false, amount:'0.1'}}

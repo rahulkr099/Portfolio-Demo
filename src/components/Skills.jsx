@@ -6,17 +6,18 @@ const Skills = () => {
   const {theme} = useTheme()
   return (
     <div className={`${theme==="Light"?'light':'dark'}`}>
-    <section className=" body-font  bg-gray-200 text-black dark:bg-black dark:text-white">
+    <section className=" body-font bg-gray-200 text-black dark:bg-black dark:text-white">
       <div className="p-4 pt-0 mt-5 mx-auto md:p-5 md:mx-20 lg:mx-32 xl:mx-56">
         <div id="skills" className="flex flex-wrap w-full mb-4 flex-col justify-center text-center md:mb-7">
           <h1 className="sm:text-4xl text-3xl font-medium mb-2 ">
             Skills
           </h1>
-          <p  className="text-xl font-medium leading-relaxed text-green-400 ">
+          <p  className="text-xl overflow-hidden font-medium leading-relaxed text-green-400 ">
             My Technical Expertise
           </p>
         </div>
         <motion.div 
+        layout='position'
         initial={{opacity:0,scale:0}}
         whileInView={{opacity:1,scale:1}}
         viewport={{once:false, amount:'0.5'}}

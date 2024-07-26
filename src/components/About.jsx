@@ -22,7 +22,7 @@ const About = () => {
         </div>
         <div className="mx-auto flex lg:flex-row flex-col items-center justify-center">
           <motion.div
-            initial={{opacity:0,x:-359}}
+            initial={{opacity:0,x:-159}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:2,stiffness:120}}

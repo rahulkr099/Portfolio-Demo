@@ -16,7 +16,7 @@ const Profile = () => {
       <section className="body-font pt-16 lg:min-h-75vh  bg-gray-200 text-black dark:bg-black dark:text-white">
         <div className="p-5 mx-auto gap-2 flex flex-col md:pt-12 md:px-7 lg:py-20 lg:flex-row-reverse items-center min-h-fit">
           <motion.div
-            initial={{opacity:0,x:399}}
+            initial={{opacity:0,x:299}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:2,stiffness:120}}
@@ -50,7 +50,7 @@ const Profile = () => {
               />
             </div>
             <motion.p
-            initial={{opacity:0,x:-399}}
+            initial={{opacity:0,x:-199}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
             transition={{duration:3,stiffness:120}}
@@ -59,7 +59,7 @@ const Profile = () => {
               I’m proficient in developing web applications using the MERN stack.
             </motion.p>
             <motion.p
-             initial={{opacity:0,x:-399}}
+             initial={{opacity:0,x:-199}}
              whileInView={{opacity:1,x:0}}
              viewport={{once:false, amount:'0.1'}}
              transition={{duration:4,stiffness:120}}

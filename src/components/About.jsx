@@ -1,7 +1,7 @@
 import AboutImg from "../assets/Images/about.png"
 import { Link } from "react-scroll";
 import {useTheme} from "../useContext/ThemeContext";
-
+import {motion} from 'framer-motion'
 
 const About = () => {
   const {theme} = useTheme()
@@ -21,8 +21,11 @@ const About = () => {
           </p>
         </div>
         <div className="mx-auto flex lg:flex-row flex-col items-center justify-center">
-          <div
-            
+          <motion.div
+            initial={{opacity:0,x:-359}}
+            whileInView={{opacity:1,x:0}}
+            viewport={{once:false, amount:'0.1'}}
+            transition={{duration:2,stiffness:120}}
             className="lg:max-w-lg sm:w-2/3 lg:w-1/2 w-full mb-10 md:mb-0"
           >
             <img
@@ -30,21 +33,31 @@ const About = () => {
               alt="hero"
               src={AboutImg}
             />
-          </div>
-          <div className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col items-center text-justify">
-            <p
-              
+          </motion.div>
+          <div 
+          
+          className="lg:w-1/2 justify-center lg:p-5 xl:p-7 md:p-5 flex flex-col items-center text-justify">
+            <motion.p
+              initial={{opacity:0,x:359}}
+              whileInView={{opacity:1,x:0}}
+              viewport={{once:false, amount:'0.1'}}
+              transition={{duration:1.5,stiffness:120}}
               className="font-medium text-lg lg:text-base xl:text-xl leading-loose xl:leading-8"
             >
               I am a passionate and dedicated web developer with a strong background in creating visually stunning and highly functional websites.<br/>
               Throughout my career, I have developed excellency in various web technologies, including HTML5, CSS3, and JavaScript. I am professional in popular libraries such as ReactJS and frameworks like NextJS and TailwindCSS, enabling me to build robust and responsive websites.<br/>
               &emsp; &emsp;  I am eager to embrace new challenges and contribute to cutting-edge projects. Please feel free to connect with me through my social media links.
-            </p>
+            </motion.p>
             <div
               
               className="mt-7 flex gap-x-4 md:gap-x-5 justify-center md:justify-between"
             >
-              <button className="inline-flex font-medium text-white bg-gray-900 border-2 border-white py-3 px-7 focus:outline-none hover:bg-gray-300 hover:border-green-500 hover:text-black rounded-full text-md xl:px-10">
+              <motion.button 
+              initial={{opacity:0,y:59}}
+              whileInView={{opacity:1,y:0}}
+              viewport={{once:false, amount:'0.1'}}
+              transition={{duration:1,stiffness:120}}
+              className="inline-flex font-medium text-white bg-gray-900 border-2 border-white py-3 px-7 focus:outline-none hover:bg-gray-300 hover:border-green-500 hover:text-black rounded-full text-md xl:px-10">
                 <Link
                 spy={true}
                 smooth={true}
@@ -54,16 +67,21 @@ const About = () => {
                 >
                   Hire Me
                 </Link>
-              </button>
+              </motion.button>
               <a
                 // href="https://drive.google.com/drive/u/1/folders/1VLbE3u0gC3x66ClPWCUmcK75DuhTAyKx"
                 href="#"
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="inline-flex font-medium text-white bg-green-500 border-2 border-white py-3 px-7 focus:outline-none hover:bg-gray-300 hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
+                <motion.button 
+                initial={{opacity:0,y:59}}
+                whileInView={{opacity:1,y:0}}
+                viewport={{once:false, amount:'0.1'}}
+                transition={{duration:1,stiffness:120}}
+                className="inline-flex font-medium text-white bg-green-500 border-2 border-white py-3 px-7 focus:outline-none hover:bg-gray-300 hover:border-dark-orange hover:text-black rounded-full text-md xl:px-10">
                   Get Resume
-                </button>
+                </motion.button>
               </a>
             </div>
           </div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
-import NameImg from "../assets/Images/name.png"
+import NameImg from "../assets/Images/name.webp"
 import { useTheme } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
 

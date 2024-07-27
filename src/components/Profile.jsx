@@ -2,7 +2,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import SocialHandles from "./SocialHandles";
-import ProfilePic from "../assets/Images/hero2.png"
+import ProfilePic from "../assets/Images/hero2.webp"
 import { useTheme } from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'
 
@@ -16,7 +16,7 @@ const Profile = () => {
       <section className="body-font overflow-hidden pt-16 lg:min-h-75vh  bg-gray-200 text-black dark:bg-black dark:text-white">
         <div className="p-5 mx-auto gap-2 flex flex-col md:pt-12 md:px-7 lg:py-20 lg:flex-row-reverse items-center min-h-fit">
           <motion.div
-          layout='position'
+            layout='position'
             initial={{opacity:0,x:59}}
             whileInView={{opacity:1,x:0}}
             viewport={{once:false, amount:'0.1'}}
@@ -61,7 +61,7 @@ const Profile = () => {
               I’m proficient in developing web applications using the MERN stack.
             </motion.p>
             <motion.p
-            layout='position'
+             layout='position'
              initial={{opacity:0,x:-99}}
              whileInView={{opacity:1,x:0}}
              viewport={{once:false, amount:'0.1'}}

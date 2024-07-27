@@ -1,4 +1,4 @@
-import AboutImg from "../assets/Images/about.png"
+import AboutImg from "../assets/Images/about.webp"
 import { Link } from "react-scroll";
 import {useTheme} from "../useContext/ThemeContext";
 import {motion} from 'framer-motion'

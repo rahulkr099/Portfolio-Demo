@@ -1,12 +1,12 @@
 import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJavascript, BiLogoMongodb, BiLogoReact, BiLogoRedux, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbDatabase, TbBrandPrisma } from "react-icons/tb";
 import { SiThemoviedatabase, SiExpress } from "react-icons/si";
-import ToDoImg from '/ToDoList.png'
-import MusicPlayerImg from '/Music-Player.png'
-import StopWatchImg from '/StopWatch.png'
-import TellMeAJokeImg from '/Tell-Me-A-Joke.png'
-import CountDownTimerImg from '/CountDown-Timer.png'
-import BookMarkKeeperImg from '/BookMark-Keeper.png'
+import ToDoImg from '/ToDoList.webp'
+import MusicPlayerImg from '/Music-Player.webp'
+import StopWatchImg from '/StopWatch.webp'
+import TellMeAJokeImg from '/Tell-Me-A-Joke.webp'
+import CountDownTimerImg from '/CountDown-Timer.webp'
+import BookMarkKeeperImg from '/BookMark-Keeper.webp'
 
 const ProjectsData = [
   {

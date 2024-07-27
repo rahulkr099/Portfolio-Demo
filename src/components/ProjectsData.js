@@ -1,6 +1,6 @@
-import { BiLogoCss3, BiLogoFirebase, BiLogoHtml5, BiLogoJavascript, BiLogoMongodb, BiLogoReact, BiLogoRedux, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
-import { TbBrandNextjs, TbApi, TbDatabase, TbBrandPrisma } from "react-icons/tb";
-import { SiThemoviedatabase, SiExpress } from "react-icons/si";
+import {   BiLogoHtml5, BiLogoJavascript,  BiLogoReact,  BiLogoTailwindCss,  } from "react-icons/bi";
+import {  TbApi,   } from "react-icons/tb";
+import {  SiExpress } from "react-icons/si";
 import ToDoImg from '/ToDoList.webp'
 import MusicPlayerImg from '/Music-Player.webp'
 import StopWatchImg from '/StopWatch.webp'
